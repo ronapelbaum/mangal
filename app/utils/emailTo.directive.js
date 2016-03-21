@@ -4,7 +4,7 @@
     function emailToDirective() {
         return {
             restrict: 'A',
-            template: "<a ng-href='emailTo:{{emailTo}}'>{{emailTo}}</a>",
+            template: "<a ng-href='mailTo:{{emailTo}}'>{{emailTo}}</a>",
             scope: {
                 emailTo: '='
             }
