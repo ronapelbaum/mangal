@@ -1,0 +1,24 @@
+[
+  {
+    "name": "Hot Dog",
+    "amount": 2,
+    "kosher": true
+  },
+  {
+    "name": "Pita",
+    "amount": 1,
+    "kosher": true,
+    "vegetarian": true
+  },
+  {
+    "name": "Humus",
+    "amount": 0.25,
+    "kosher": true,
+    "vegetarian": true
+  },
+  {
+    "name": "Oysters",
+    "amount": 0.35,
+    "kosher": false
+  }
+]

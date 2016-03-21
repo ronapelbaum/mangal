@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mangal</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="node_modules/angular/angular.js"></script>
+
+    <script src="app/app.module.js"></script>
+    <script src="app/PeopleController.js"></script>
+    <script src="app/GroceriesController.js"></script>
+    <script src="app/DataService.js"></script>
+
+    <script src="app/utils/utils.module.js"></script>
+    <script src="app/utils/emailTo.directive.js"></script>
+    <script src="app/utils/property.filter.js"></script>
+
+</head>
+
+<body ng-app="app" class="container">
+
+<div ng-controller="PeopleController as ctrl" class="panel">
+    <h2 class="panel-heading">People</h2>
+    <div class="panel-body">
+        <form ng-submit="ctrl.addPerson()">
+            <label>
+                Name:
+                <input type="text" required ng-model="ctrl.person.name" ng-model-options="{ updateOn: 'blur' }"/>
+            </label>
+            <label>
+                Email:
+                <input type="email" required ng-model="ctrl.person.email" ng-model-options="{ updateOn: 'blur' }"/>
+            </label>
+            <input type="submit" value="add"/><br/>
+        </form>
+
+        <table class="table table-bordered table-hover">
+            <thead class="thead-inverse">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="person in ctrl.people track by $index">
+                <td ng-bind="person.name"></td>
+                <td email-to="person.email"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div ng-controller="GroceriesController as ctrl" class="panel">
+    <h2 class="panel-heading">Groceries</h2>
+    <div class="panel-body">
+        <div class="radio">
+            <label>
+                <input type="radio" ng-model="ctrl.filter" value="kosher">
+                Kosher
+            </label>
+            <label>
+                <input type="radio" ng-model="ctrl.filter" value="vegetarian">
+                Vegetarian
+            </label>
+            <label>
+                <input type="radio" ng-model="ctrl.filter" value="">
+                All
+            </label>
+        </div>
+
+        <table class="table table-bordered table-hover">
+            <thead>
+            <tr>
+                <th>Item</th>
+                <th>Amount</th>
+                <th>Units</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="item in ctrl.groceries | property: ctrl.filter track by $index ">
+                <td ng-bind="item.name"></td>
+                <td ng-bind="item.amount * ctrl.quantity"></td>
+                <td ng-bind="item.unit"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+</body>
+</html>
