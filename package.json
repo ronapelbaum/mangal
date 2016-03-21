@@ -1,0 +1,15 @@
+{
+  "name": "Mangal",
+  "version": "0.0.0",
+  "description": "help to plan a Mangal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "angular": "~1.5.2",
+    "bootstrap": "~3.3.6"
+  }
+}
