@@ -10,6 +10,11 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "angular": "~1.5.2",
-    "bootstrap": "~3.3.6"
+    "bootstrap": "~3.3.6",
+    "angular-mocks": "~1.5.2",
+    "jasmine-core": "~2.4.1",
+    "karma": "~0.13.22",
+    "karma-jasmine": "~0.3.8",
+    "karma-chrome-launcher": "~0.2.2"
   }
 }
