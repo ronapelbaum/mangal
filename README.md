@@ -5,13 +5,18 @@ a simple angular 1.x project for unit testing practics
 get 100% line coverage
 
 ###Getting started
-`~$ npm install`
+```
+~$ npm install
+```
 
 ###Solutions
+```
 checkout tests_b
+```
 
 
 ##Appendix - how to init karma?
+```
 npm init
 npm install --save jasmine-core
 npm install --save karma 
@@ -21,3 +26,4 @@ npm install -g karma-cli
 karma init
 karma start
 karma run
+```
