@@ -39,6 +39,25 @@ module.exports = function (config) {
         reporters: ['progress','coverage'],
 
 
+        //coverage reporter
+        coverageReporter: {
+            // check: {
+            //     global: {
+            //         statements: 100,
+            //         lines: 100,
+            //         functions: 100,
+            //         branches: 100
+            //     }
+            // },
+            reporters:[{
+                type: 'html',
+                dir: 'coverage/'
+            },
+                {
+                    type: 'text-summary'
+                }]
+        },
+
         // web server port
         port: 9876,
 
