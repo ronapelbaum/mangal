@@ -1,3 +1,4 @@
+[![Coverage Status](https://coveralls.io/repos/github/ronapelbaum/mangal/badge.svg?branch=master)](https://coveralls.io/github/ronapelbaum/mangal?branch=master)
 # mangal
 a simple angular 1.x project for unit testing practics
 
