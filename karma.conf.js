@@ -36,8 +36,33 @@ module.exports = function (config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress','coverage'],
+        reporters: ['progress', 'coverage', 'coveralls'],
 
+
+        //coverage reporter
+        coverageReporter: {
+            // check: {
+            //     global: {
+            //         statements: 100,
+            //         lines: 100,
+            //         functions: 100,
+            //         branches: 100
+            //     }
+            // },
+            reporters: [
+                {
+                    type: 'html',
+                    dir: 'coverage/'
+                },
+                {
+                    type: 'lcov', // lcov or lcovonly are required for generating lcov.info files
+                    dir: 'coverage/'
+                },
+                {
+                    type: 'text-summary'
+                }
+            ]
+        },
 
         // web server port
         port: 9876,
@@ -58,7 +83,7 @@ module.exports = function (config) {
 
         // start these browsers
         // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-        browsers: ['Chrome'],
+        browsers: ['PhantomJS'],
 
 
         // Continuous Integration mode
