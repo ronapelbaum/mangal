@@ -9,6 +9,7 @@ get 100% line coverage
 ###Getting started
 ```
 ~$ npm install
+~$ npm test
 ```
 
 ###Solutions
@@ -29,3 +30,9 @@ karma init
 karma start
 karma run
 ```
+
+## branch `tests_b`
+
+[![Build Status](https://travis-ci.org/ronapelbaum/mangal.svg?branch=tests_b)](https://travis-ci.org/ronapelbaum/mangal)
+[![Coverage Status](https://coveralls.io/repos/github/ronapelbaum/mangal/badge.svg?branch=tests_b)](https://coveralls.io/github/ronapelbaum/mangal?branch=tests_b)
+
