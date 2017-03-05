@@ -36,7 +36,7 @@ module.exports = function (config) {
         // test results reporter to use
         // possible values: 'dots', 'progress'
         // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-        reporters: ['progress','coverage'],
+        reporters: ['progress', 'coverage', 'coveralls'],
 
 
         //coverage reporter
@@ -49,13 +49,19 @@ module.exports = function (config) {
             //         branches: 100
             //     }
             // },
-            reporters:[{
-                type: 'html',
-                dir: 'coverage/'
-            },
+            reporters: [
+                {
+                    type: 'html',
+                    dir: 'coverage/'
+                },
+                {
+                    type: 'lcov', // lcov or lcovonly are required for generating lcov.info files
+                    dir: 'coverage/'
+                },
                 {
                     type: 'text-summary'
-                }]
+                }
+            ]
         },
 
         // web server port
