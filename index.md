@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/ronapelbaum/mangal.svg?branch=master)](https://travis-ci.org/ronapelbaum/mangal)
+[![Coverage Status](https://coveralls.io/repos/github/ronapelbaum/mangal/badge.svg?branch=master)](https://coveralls.io/github/ronapelbaum/mangal?branch=master)
 # mangal
 a simple angular 1.x project for unit testing practics
 
@@ -7,6 +9,7 @@ get 100% line coverage
 ###Getting started
 ```
 ~$ npm install
+~$ npm test
 ```
 
 ###Solutions
@@ -27,3 +30,8 @@ karma init
 karma start
 karma run
 ```
+
+## branch `tests_b`
+
+[![Build Status](https://travis-ci.org/ronapelbaum/mangal.svg?branch=tests_b)](https://travis-ci.org/ronapelbaum/mangal)
+[![Coverage Status](https://coveralls.io/repos/github/ronapelbaum/mangal/badge.svg?branch=tests_b)](https://coveralls.io/github/ronapelbaum/mangal?branch=tests_b)
