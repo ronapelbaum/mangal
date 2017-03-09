@@ -1,0 +1,8 @@
+title: Mangal
+description: a simple angular 1.x project for unit testing practics
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-tactile
+
+gems:
+  - jekyll-mentions
