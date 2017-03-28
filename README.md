@@ -14,10 +14,15 @@ npm install
 npm test
 ```
 
-### Solutions
+## Solution: branch `tests_b`
+
 ```
-checkout tests_b
+git checkout tests_b
 ```
+
+[![Build Status](https://travis-ci.org/ronapelbaum/mangal.svg?branch=tests_b)](https://travis-ci.org/ronapelbaum/mangal)
+[![Coverage Status](https://coveralls.io/repos/github/ronapelbaum/mangal/badge.svg?branch=tests_b)](https://coveralls.io/github/ronapelbaum/mangal?branch=tests_b)
+
 
 
 ## Appendix - how to init karma?
@@ -32,13 +37,4 @@ karma init
 karma start
 karma run
 ```
-
-## branch `tests_b`
-
-```
-git checkout tests_b
-```
-
-[![Build Status](https://travis-ci.org/ronapelbaum/mangal.svg?branch=tests_b)](https://travis-ci.org/ronapelbaum/mangal)
-[![Coverage Status](https://coveralls.io/repos/github/ronapelbaum/mangal/badge.svg?branch=tests_b)](https://coveralls.io/github/ronapelbaum/mangal?branch=tests_b)
 
