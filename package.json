@@ -4,19 +4,24 @@
   "description": "help to plan a Mangal",
   "main": "index.js",
   "scripts": {
+    "preiki": "rm -rf node_modules/karma-coverage-incremental coverage.configuration.json aaa.json",
+    "iki": " npm install && npm test",
+    "pretest": "rm -rf coverage/",
     "test": "karma start karma.conf.js --single-run"
   },
   "author": "",
   "license": "BSD-2-Clause",
   "dependencies": {
     "angular": "~1.5.2",
-    "bootstrap": "~3.3.6",
     "angular-mocks": "~1.5.2",
+    "bootstrap": "~3.3.6",
+    "express": "^4.16.2",
     "jasmine-core": "~2.4.1",
     "karma": "~0.13.22",
-    "karma-jasmine": "~0.3.8",
     "karma-chrome-launcher": "~0.2.2",
-    "karma-coverage": "~0.5.5"
+    "karma-coverage": "~0.5.5",
+    "karma-coverage-incremental": "file:../karma-coverage-incremental",
+    "karma-jasmine": "~0.3.8"
   },
   "devDependencies": {
     "karma-coveralls": "^1.1.2",

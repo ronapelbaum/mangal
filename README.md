@@ -5,6 +5,11 @@
 # mangal
 a simple angular 1.x project for unit testing practics
 
+### Running app
+```
+npm start
+```
+
 ### Goal
 get 100% line coverage
 
